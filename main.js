@@ -94,4 +94,4 @@ questions("What does CSS stand for?", "Cascading Style Sheets", [
   "Corrective Style Sheets",
   "Cascading Style Sheets",
 ]);
-questions("How many types does Javascript have?", 8, [6, 7, 8, 9]);
+questions("How many types does Javascript have?", 7, [6, 7, 8, 9]);
