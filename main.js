@@ -48,6 +48,10 @@ link.style.fontSize = "24px";
 link.style.fontWeight = "bold";
 card.append(heading, link);
 document.body.append(card);
+document.getElementById("card").style.background = "orange";
+document.getElementById("card").style.border = "3px solid black";
+card.style.margin = "20px 0";
+
 console.log(card);
 
 // შექმენი quiz თამაში
@@ -74,12 +78,17 @@ function questions(question, correctOption, options) {
         alert("You are correct");
         score++;
         scoreElement.textContent = "score: " + score;
+        buttonEl.style.background = "green";
 
         if (score == 3) {
-          alert("Congratulations! You have passed the test");
+          setTimeout(() => {
+            alert("Congratulations! You have passed the test");
+            scoreElement.remove();
+          }, 1000);
         }
       } else {
         alert("Wrong answer. Try again");
+        buttonEl.style.background = "red";
       }
     });
     return buttonEl;
