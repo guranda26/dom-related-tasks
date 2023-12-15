@@ -76,7 +76,7 @@ function questions(question, correctOption, options) {
         scoreElement.textContent = "score: " + score;
 
         if (score == 3) {
-          alert("Good Job!");
+          alert("Congratulations! You have passed the test");
         }
       } else {
         alert("Wrong answer. Try again");
